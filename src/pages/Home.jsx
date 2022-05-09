@@ -1,20 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import CardsContainer from '../components/CardsContainer'
+import React, { useState, useEffect } from "react";
+import CardsContainer from "../components/CardsContainer";
+import Carrousel from "../components/Carrousel";
+import { withUser } from "../context/Context";
 
-const API = 'https://reqres.in/api/users'
+const API = "https://reqres.in/api/users";
 
+const Home = ({ users: userList, updateUsers }) => {
+  useEffect(() => {
+    fetch(API)
+      .then((response) => response.json())
+      .then((users) => updateUsers(users.data));
+  }, []);
 
-export default function Home() {
-    const [user, setUser] = useState([])
-    useEffect(()=>{
-        fetch(API)
-            .then(response => response.json())
-            .then(users => setUser(users.data))
-    }, [])
-    console.log(user)
   return (
     <section>
-        <CardsContainer user={user} />
+      <Carrousel />
+      <CardsContainer users={userList} />
     </section>
-  )
-}
+  );
+};
+
+export default withUser(Home);

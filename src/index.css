@@ -11,10 +11,9 @@
 }
 #carrousel {
   position: relative;
-  
 }
 
-#carrousel .carousel-inner img{
+#carrousel .carousel-inner img {
   width: 100%;
   max-height: 70vh;
   object-fit: cover;
@@ -46,7 +45,7 @@
 }
 
 li {
-  list-style: none;  
+  list-style: none;
 }
 
 .btn-vortex {
@@ -58,5 +57,11 @@ li {
   cursor: pointer;
 }
 .footer-left li {
+  color: white;
+}
+
+.is-favorite {
+  background-color: #dc3545;
+  border-color: #dc3545;
   color: white;
 }

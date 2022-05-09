@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function AboutUs() {
   return (
-    <div>Todavia no sé quienes somos.</div>
+    <h1 className='text-center' >No sé quienes somos.</h1>
   )
 }
