@@ -18,10 +18,9 @@ export default function Footer() {
               </ul>            
             </div>
             <div className="col d-flex align-items-center">
-            <ul className='footer-right d-flex ps-0 pb-3 m-0 p-sm-0 w-100 justify-content-center justify-content-lg-end gap-3'>
-                <li className='cursor-pointer'><a href="#"></a><img src={FacebookLogo} alt="logo-github" /></li>
-                <li className='cursor-pointer'><a href="#"></a><img src={InLogo} alt="logo-linkedin" /></li>
-                <li className='cursor-pointer'><a href="#"></a><img src={GitLogo} alt="logo-facebook" /></li>
+            <ul className='footer-right d-flex ps-0 pb-3 m-0 p-sm-0 w-100 justify-content-center justify-content-lg-end gap-3'>                
+                <li className='cursor-pointer'><a target="_blank" href="https://www.linkedin.com/in/cesar-torrens/"> <img src={InLogo} alt="logo-linkedin" /> </a></li>
+                <li className='cursor-pointer'><a target="_blank" href="https://github.com/CesarTorrens"> <img src={GitLogo} alt="logo-github" /> </a></li>
               </ul>
             </div>
           </div>
